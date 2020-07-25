@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <div>
+    <h1>Demo</h1>
+  </div>
+
+<style>
+.imgdes{
+    padding: 20px 20px;
+}
+</style>
+
+      <form action = "http://localhost:5000/" method = "POST"
+        enctype = "multipart/form-data" name="content">
+
+          <!-- <img src = "{{ input_image }}" alt="User Image" height="300" width="400" class="imgdes"/>m -->
+          <input type = "file" name = "file" value = "input_file" class="">
+
+          <button type="submit">Upload '.jpg' files</button>
+
+     </form>
+
+     <form action = "http://localhost:5000/result" method = "POST">
+       <p>
+         <button width='100px' type="submit" >Do stuff</button>
+       </p>
+     </form>
+{% endblock %}
