@@ -10,3 +10,9 @@ and then run
 ```
 python app.py
 ```
+## Sample
+
+| Sketch             |  Coloured Sketch |
+:-------------------------:|:-------------------------:
+![](static/images/uploads/images.jpeg)  |  ![](static/images/output/1623485321.4185681_generated_image.jpg)
+![](static/images/uploads/jose-maria-martinez-dicaprio.jpg)  |  ![](static/images/output/1623485321.713746_generated_image.jpg)
