@@ -81,7 +81,9 @@ def result():
     generated_image = learn.predict(input_image)
     #generated_image = cv2.Canny(input_image, 100,200)
     #generated_image = generated_image[0]
-    generated_image[0].save('./static/images/output/generated_image.jpg')
+    #generated_image[0].save('./static/images/output/generated_image.jpg')
+    generated_image[0].save(f'./static/images/output/{time.time()}_generated_image.jpg')
+
 
 
     if request.method == 'POST':
