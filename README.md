@@ -4,7 +4,7 @@ Before starting please download model [from here](https://drive.google.com/file/
 
 Get Dependencies 
 ```
-pip install -r requirements.txt
+conda env create -f environment.yml
 ```
 and then run 
 ```

@@ -3,6 +3,7 @@ from flask import Flask, render_template,  request, redirect, url_for, send_from
 import os
 import cv2
 import sys
+import time
 
 from fastai.vision import *
 from werkzeug.utils import secure_filename
@@ -82,7 +83,7 @@ def result():
     #generated_image = cv2.Canny(input_image, 100,200)
     #generated_image = generated_image[0]
     #generated_image[0].save('./static/images/output/generated_image.jpg')
-    generated_image[0].save(f'./static/images/output/{time.time()}_generated_image.jpg')
+    generated_image[0].save(f'./static/images/output/generated_image.jpg')
 
 
 
